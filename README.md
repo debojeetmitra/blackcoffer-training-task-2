@@ -1,21 +1,69 @@
-# Blackcoffer Training Task 2
+# Blackcoffer Training Task 2 - Employee Management Dashboard
 
-Task 2 submission for the Blackcoffer training program.
+A full-stack Employee Management Dashboard developed as part of the Blackcoffer training program.
 
-## 📌 Project Overview
+This project focuses on building a backend employee management system using Node.js, Express.js, and Elasticsearch, along with a modern React-based dashboard interface for managing employee records.
 
-This project is focused on building an Employee Management backend using **Node.js**, **Express.js**, and **Elasticsearch**. It provides APIs to manage employee data and demonstrates integration with Elasticsearch for efficient indexing and searching.
+---
 
-## 🚀 Features
+# 📌 Project Overview
 
-* Employee Management REST APIs
-* Elasticsearch Integration
-* JSON-based API Responses
-* Modular Project Structure
-* Environment Variable Configuration
-* Ready for Frontend Integration
+The application provides a complete employee management solution with:
 
-## 🛠️ Tech Stack
+* Employee creation
+* Employee listing
+* Employee deletion
+* Employee search functionality
+* Elasticsearch-based data indexing
+* Modern responsive dashboard UI
+
+The project follows a modular architecture with separate backend API services and frontend UI components.
+
+---
+
+# 🚀 Features
+
+## Backend Features
+
+✅ Express.js REST API server
+✅ Employee CRUD API structure
+✅ Create employee API
+✅ Get all employees API
+✅ Update employee API
+✅ Delete employee API
+✅ Employee search API
+✅ Elasticsearch integration for indexing and searching
+✅ JSON-based API responses
+✅ Modular controllers and routes structure
+✅ Environment variable configuration
+
+---
+
+## Frontend Features
+
+✅ Modern Employee Management Dashboard
+✅ Responsive employee card layout
+✅ Add employee functionality
+✅ View employee list
+✅ Delete employee functionality
+✅ Dynamic employee avatar initials
+✅ Dark / Light theme toggle
+✅ Theme persistence using localStorage
+✅ Toast notifications for user feedback
+✅ Smooth UI animations
+✅ Clean and responsive design
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+* React.js
+* Vite
+* CSS3
+
+## Backend
 
 * Node.js
 * Express.js
@@ -23,34 +71,66 @@ This project is focused on building an Employee Management backend using **Node.
 * JavaScript
 * dotenv
 
-## 📂 Project Structure
+---
+
+# 📂 Project Structure
 
 ```text
-training-task-2/
+blackcoffer-training-task-2/
+
 │
 ├── backend/
 │   ├── config/
+│   │   └── elasticsearch.js
+│   │
 │   ├── controllers/
+│   │   └── employeeController.js
+│   │
 │   ├── routes/
+│   │   └── employeeRoutes.js
+│   │
 │   ├── index.js
 │   ├── package.json
 │   └── .env
 │
-└── .gitignore
+└── frontend/
+    ├── src/
+    │   ├── components/
+    │   │   ├── EmployeeForm.jsx
+    │   │   └── EmployeeList.jsx
+    │   │
+    │   ├── App.jsx
+    │   ├── App.css
+    │   └── index.css
+    │
+    ├── package.json
+    └── vite.config.js
 ```
 
-## ⚙️ Installation
+---
 
-Clone the repository:
+# ⚙️ Installation & Setup
+
+## Clone Repository
 
 ```bash
 git clone https://github.com/debojeetmitra/blackcoffer-training-task-2.git
 ```
 
-Move into the project directory:
+Move into project directory:
 
 ```bash
-cd blackcoffer-training-task-2/backend
+cd blackcoffer-training-task-2
+```
+
+---
+
+# Backend Setup
+
+Navigate to backend folder:
+
+```bash
+cd backend
 ```
 
 Install dependencies:
@@ -59,43 +139,92 @@ Install dependencies:
 npm install
 ```
 
-Create a `.env` file and configure your Elasticsearch credentials.
+Create `.env` file:
 
-Start the development server:
+```env
+PORT=5000
+ELASTICSEARCH_URL=your_elasticsearch_url
+```
+
+Start backend server:
 
 ```bash
 npm run dev
 ```
 
-or
+Backend will run on:
 
-```bash
-npm start
+```text
+http://localhost:5000
 ```
 
-## 📌 Current Progress
+---
 
-* ✅ Backend project setup
-* ✅ Express server configuration
-* ✅ Elasticsearch connection
-* ✅ Employee API structure
-* 🚧 Employee CRUD APIs (In Progress)
-* 🚧 Search API (In Progress)
-* ⏳ Frontend Integration
+# Frontend Setup
 
-## 📖 Learning Objectives
+Open another terminal:
 
-* Working with REST APIs
-* Integrating Elasticsearch with Node.js
-* Building scalable backend architecture
-* API routing and controller organization
-* Environment variable management
+```bash
+cd frontend
+```
 
-## 👨‍💻 Author
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start frontend:
+
+```bash
+npm run dev
+```
+
+Frontend will run on:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# 📌 Completed Progress
+
+✅ Backend project setup
+✅ Express server configuration
+✅ Elasticsearch connection
+✅ Employee API implementation
+✅ CRUD API routes
+✅ Employee search API
+✅ React frontend integration
+✅ Employee dashboard UI
+✅ Dark/Light theme implementation
+✅ Toast notification system
+✅ Employee avatar initials feature
+✅ Final testing and GitHub submission
+
+---
+
+# 📖 Learning Outcomes
+
+Through this project, I learned:
+
+* Building REST APIs using Node.js and Express
+* Integrating Elasticsearch with backend applications
+* Creating modular backend architecture
+* Managing API routes and controllers
+* Connecting React frontend with backend APIs
+* Building responsive dashboard interfaces
+* Improving user experience with modern UI features
+
+---
+
+# 👨‍💻 Author
 
 **Debojeet Mitra**
 
-* GitHub: https://github.com/debojeetmitra
-* LinkedIn: https://www.linkedin.com/in/debojeet-mitra-159078289/
+GitHub:
+https://github.com/debojeetmitra
 
----
+LinkedIn:
+https://www.linkedin.com/in/debojeet-mitra-159078289/
